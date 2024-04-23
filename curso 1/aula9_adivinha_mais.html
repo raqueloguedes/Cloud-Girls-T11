@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+    //Dentro de um array, separamos os conteúdos por vírgula (,)
+    //posicoes seria0,1,2,3,4
+    //posicao < segredo no caso a quantidade de numeros, nesse caso seria posição < 5
+    var segredos = [5,7,10,2,3];//aqui é um array
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+    var achou = false;//aqui é pra ajudar aparecer quando errou
+
+    for(var posicao = 0; posicao < segredos.length; posicao++) {
+        //posicao < segredos.lenght enquanto tiver, ele vai verificar
+        //posicao++ é o contador
+        //segredos.lenght é a quantidade de numeros contidos na var segredos
+
+        if(input.value == segredos[posicao]) {//se o valor inserido for igual a algum valor em segredos que por sua vez contem em posição 
+        //faremos com que a comparação seja feita na posição escolhida, aquela determinada pelo nosso for():
+            alert("Você ACERTOU!");
+            achou = true;//quando achou for verdadeiro
+            break;//para não se repetir
+        }
+    }
+
+    if(achou == false) {//colocamos a var achou para possibilitar 
+        alert("Você ERROU!");
+    }
+
+    input.value = "";//quando errar ficar em branco
+    input.focus();//foco
+
+    }//a função verifica termina aqui
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+
+
+

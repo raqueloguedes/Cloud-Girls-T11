@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<input/> <!--aqui o imput vai receber a informação-->
+<button>Compare com o meu segredo</button><!--aqui o botão vai informar e ser botão-->
+
+<script>
+    var segredo = Math.round(Math.random() * 10);
+    input.focus();//aqui é pra a caixinha já ficar pronta pra digitar, não precisa clicar
+    var input = document.querySelector("input");//esse document.querySelector vai puxar o imput pro mundo JS
+
+    function verifica() {//a funçaõ se faz necessária para o alert só aparecer apos informar o numero
+
+        if(input.value == segredo) {//imput.value é o valor que foi preenchido
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+        input.value = "";
+        input.focus();//depois que errou, já pode digitar de novo sem precisar clicar na caixinha
+    }
+
+    var button = document.querySelector("button");//remete ao button mas no mundo JS
+
+    button.onclick = verifica;//só vai executar o verifica quando clicar, se coloca-se verifica(); ia aparecer a mensagem antes
+
+
+</script>

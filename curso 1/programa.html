@@ -1,0 +1,115 @@
+<meta charset="UTF-8">
+
+<script>
+
+    document.write("A idade do Flávio é ");// tem que dar o espaço entre as aspas se não fica pegado no 18
+    document.write("18");
+    document.write("<br>");// aceita comendos htm dentro do js quando escritos entre aspas e dentro da tag document.write
+    document.write("<br>");
+    document.write("<br>");
+
+
+    document.write("A idade do Flávio é ");
+    document.write(18);// apesar de não estar entre as aspas para ser lido como texto, o js lê como número
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("A idade do Flávio é ");
+    document.write("18" + "20");// numero quando entre aspas são lidos como texto e com o sinal de + ficam colados
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("A média das idades é");
+    document.write(20 + 10 + 30/3);//o js lê da esquerda para a direta por isso que vai começar somando, deve´se usar parente nas operações mátematicas, principalemnte a que queremos resolvidas primeiro
+
+
+    document.write("Flávio tem " + (2016 - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (2016 - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (2016 - 1976) + " anos");
+    document.write("<br>");
+
+    document.write("<br>");
+    document.write("<br>");
+    
+    var ano = 2016; // variavel, só se usa var quando se esta declarando a variavel pela primeira vez
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017; // o js lê lionha a linha, então a variavel pode mudar 
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>"); 
+    document.write("<br>"); 
+    document.write("<br>"); 
+
+    var n = 3;//exemplo
+    document.write("O resultado da fórmula é : " + n * (10 / 20)  );
+
+
+
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+        
+        document.write('A média das idades é  ' + (39 + 20 + 41)/3);
+        document.write("<br>");
+        document.write("<br>");
+
+
+    var media = (39 + 20 + 41)/3;//uma forma de dimnuir os parenteses no codigo abaixo
+
+    document.write('A média das idades é ' + media);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+
+    var idadeFlavio = 39;// nome começando em maisculo é uma convenção
+    var idadeJoaquim = 20;
+    var idadeBarney = 41;
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;//para ficar mais claro
+
+    document.write('A média das idades é ' + Math.round(media));//arrendondamento
+
+
+
+
+    var tanque = 40;
+    var caminhoComGasolina = 480;
+    var consumoDeGasolina = caminhoComGasolina/tanque;
+
+    var caminhoComAlcool = 300;
+    var consumoDeAlcool = caminhoComAlcool/tanque;
+
+    document.write("O consumo de Gasolina é " + consumoDeGasolina + " km/L");
+    document.write("<br>");
+    
+    document.write("O consumo de Álcool é " + consumoDeAlcool + " km/L");
+
+
+
+
+
+
+</script>

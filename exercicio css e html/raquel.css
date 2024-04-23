@@ -1,0 +1,19 @@
+body {
+    background-color: hsl(0, 0%, 0%);
+    color: #F6F6F6;
+}
+/*aqui que posso usar cor com hashtag*/
+strong {
+    color: #ff69b4;
+}
+
+h1{
+    font-weight: bold;
+    color: #dda0dd
+}
+/*posso usar tanto strong quanto span para destacar*/
+span{
+    color: #c71585;
+    border: 1px solid #c71585;
+    padding: 10px;
+}

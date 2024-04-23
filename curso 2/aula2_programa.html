@@ -1,0 +1,76 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+/* pincel.fillStyle = 'green';
+pincel.fillRect(0, 0, 50, 50);
+pincel.strokeStyle = 'black';
+pincel.strokeRect(0, 0, 50, 50);
+
+pincel.fillRect(50, 0, 50, 50);
+pincel.strokeRect(50, 0, 50, 50);
+
+pincel.fillRect(100, 0, 50, 50);
+pincel.strokeRect(100, 0, 50, 50); */
+
+/*
+
+function desenhaQuadradoVerde() {
+
+}
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = 'green';         //quando não colamos cor, fica preto como a cor padrao
+pincel.fillRect(0, 0, 50, 50);
+pincel.strokeStyle = 'black';       //borda do quadrado
+pincel.strokeRect(0, 0, 50, 50);    //tem que ser igual
+
+desenhaQuadradoVerde();
+*/
+
+//FUNÇÃO GENERICA para toda ves que eu quiser digitar um quadrado
+
+
+function desenhaQuadrado(x, y, cor) {//VARIAVEIS
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = cor;
+pincel.fillRect(x, y, 50, 50);
+pincel.strokeStyle = 'black';
+pincel.strokeRect(x, y, 50, 50);
+}
+
+
+//se eu quisesse um quadrado de cada cor
+/*
+desenhaQuadrado(0, 0, 'blue');
+desenhaQuadrado(0, 50, 'red');
+desenhaQuadrado(0, 100, 'yellow');
+*/
+
+//aqui é pra repetir quadrado até o limete
+
+    /*
+    var x = 0;
+
+    while(x < 600) {
+
+        desenhaQuadrado(x, 0, 'green');
+    x = x + 50;
+    }
+   */
+    //igual ao de cima
+
+    for(var x = 0; x < 600; x = x + 50) {
+    desenhaQuadrado(x, 0, 'green');
+    }
+
+
+</script>

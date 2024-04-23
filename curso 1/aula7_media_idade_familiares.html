@@ -1,0 +1,34 @@
+<script>
+
+    function pulaLinha() {
+    
+        document.write("<br>");
+        document.write("<br>");
+    
+    }
+    
+    function mostra(frase) {
+    
+        document.write(frase);
+        pulaLinha();
+    
+    }
+    
+//aqui eu quero saber quantos familiares e a media de suas idades
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));//prompt
+    var numero = 1;//aqui é a variavel do contador de familiares 
+    var totalIdades = 0;//aqui é o contador do total para media
+while(numero <= totalFamiliares) {
+    var idade = parseInt(prompt("Informe idade do familiar"));
+    totalIdades = totalIdades + idade;//soma das idades
+    numero++;//contador de quantos familiares
+
+}
+var mediaDasIdades = totalIdades/totalFamiliares//media
+mostra("A média das idades dos familiares é " + mediaDasIdades);
+mostra("FIM");
+
+
+
+    </script>

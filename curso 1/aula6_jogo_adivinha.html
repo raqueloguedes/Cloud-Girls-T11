@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+//AQUI ERA A PRIMEIRA VERSÃO 
+//___________________________________________________________________
+//var numeroPensado = Math.round(Math.random() * 10);//math.random é o numero aleatorio, round para ser numero inteiro
+//var chute = parseInt(prompt("digite seu chute!"));//prompt
+
+//if(chute == numeroPensado) {//A condição if precisa receber o resultado de uma operação lógica dentro de seu parênteses.
+    //mostra("Você acertou!");//Além disso, é dentro do seu bloco que indicamos qual ou quais instruções serão executadas se a operação lógica der true:
+
+//} else {//aqui seria tipo o senao, para não precisar usar outro if
+//    mostra("Você errou, o número pensado foi " + numeroPensado);
+//}
+//________________________________________________________________________
+
+//3 tentativas pra adivinhar e break quando acertar
+var numeroPensado = Math.round(Math.random() * 10);
+
+var tentativas = 1;
+
+while(tentativas <= 3) {
+
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+        break;//aqui se eu acertar ele não ira finalizar as 3 tentativas
+
+    } else {
+
+        mostra("Você ERROU!");
+    }
+
+    tentativas++;//ate 3 tentativas
+}
+
+mostra("FIM");
+</script>

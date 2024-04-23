@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var limite = parseInt(prompt("Entre com a data limite"));
+
+var anoCopa = 1930;//começa contando com esse ano e vai somando 4
+//o while vai mostar todas as datas até aquele momento
+while(anoCopa <= limite) {
+
+    mostra("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;//no caso o while repete essa ação, somando com o valor anterior, ate chegar ao limite?
+// essa variavel precisa ser dentro do while, senão não exibira
+}
+
+mostra("FIM");
+
+
+
+</script>

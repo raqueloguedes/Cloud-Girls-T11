@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {//aqui o frase é usado como parametro para possibilitar a leitura dao texto
+    document.write(frase);//Lembre-se de colocar o código dentro da função, com um recuo sempre mais à direita e utilize o TAB do seu teclado para criar esse recuo. Esse processo é conhecido como indentação do código
+    pulaLinha();
+}
+
+
+var ano = 2019;
+mostra("Eu nasci em : " + (ano - 25));
+mostra("Adriano nasceu em : " + (ano - 26));//importante sempre usar parenteses
+mostra("Paulo nasceu em : " + (ano - 32));
+
+function puladuasLinha() {
+    // pulando duas linhas
+    document.write("<br><hr><br>");// esse hr desenha linha
+}
+
+function mostraduas(frase) {//pula duas e hr
+    document.write(frase);
+    puladuasLinha();
+
+}
+
+mostraduas("sera que agora vai");//teste com hr
+
+function mostrabig(frase) {
+    document.write("<big>" + frase + "</big>");//big pra aumentar a frase
+    pulaLinha();
+}
+
+mostrabig("sera que agora vai");//big
+
+
+
+</script>

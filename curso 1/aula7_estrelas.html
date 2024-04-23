@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    for(var linha = 1; linha <= 3; linha++) {//aqui vai mostrar linhas
+
+        for(var coluna = 1; coluna <= 10; coluna++) {//essas linhas vão conter 10 asteriscos
+            document.write("*");//o for acima é para evitar escrever aqui 10 asteriscos
+        }
+        pulaLinha();
+    }
+
+</script>

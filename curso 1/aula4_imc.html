@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+
+<script>
+
+// RETURN FUNCTION
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var pesoFlavio = 73;
+var alturaFlavio = 1.71;
+
+var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+
+mostra("O imc do Flávio é " + imcFlavio);
+
+var pesoAmigo = 68;
+var alturaAmigo = 1.72;
+var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+
+mostra("O imc do amg é " + imcAmigo);
+
+function calculaImc(altura, peso) {//altura, peso são parametros
+    //aqui a gente vai usar uma função para abreviar
+
+    var imc = peso / (altura* altura);
+    mostra("O imc calculado é " + imc);
+
+}
+
+calculaImc(1.71, 73);//altura, peso são parametros e devem constar aqui
+calculaImc(1.72, 68);
+
+function calculaImc2(altura, peso) {
+
+var imc2 = peso / (altura * altura);
+return imc2;//esse retorno é para retornar o resultado
+
+}
+
+var imcFlavio = calculaImc2(1.71, 73);// aqui colocou o calcula imc para identificação 
+var imcAmigo = calculaImc2(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+
+function calculaImc3(altura, peso) {
+
+return peso / (altura * altura);// pode ser o return direto
+}
+//É importante entender que a concatenação não é feita com a função, mas sim com seu retorno, a instrução return. 
+
+
+var imcFlavio3 = calculaImc3(1.71, 73);
+var imcAmigo3 = calculaImc3(1.72, 68);
+var totalImc3 = imcFlavio3 + imcAmigo3;
+
+document.write("A soma dos imc's é " + totalImc3);
+
+var totalImc = calculaImc3(1.71, 73) + calculaImc3(1.72, 68); //pode ser assim tbm a soma
+
+//PROMPT
+
+function calculaImc4(altura, peso) {
+
+return peso / (altura * altura);// pode ser o return direto
+}
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt(nome + ", informe sua altura");
+var pesoInformado = prompt(nome + ", informe seu peso");
+
+var imc4 = calculaImc4(alturaInformada, pesoInformado);
+
+document.write(nome + ", o seu IMC é " + imc4);
+</script>
