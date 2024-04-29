@@ -160,8 +160,27 @@ strong {
 
     .apresentacao{
         flex-direction: column-reverse;
+        padding: 5%;
     }
+    .apresentacao__conteudo{
+        width: auto; /* aqui esse auto é de automatico, vai usar todo o espaço disponivel do padding, poderia tambem ser 100%*/
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     /* tambem pode mudar a cor por aqui */
 }
+
+
 
 
